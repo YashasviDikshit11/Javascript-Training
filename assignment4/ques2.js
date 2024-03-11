@@ -1,9 +1,15 @@
 // Write a program to reverse a string ("Hello John" => "olleH nhoJ")
-function rev(str){
-    let ans='';
-    for(let i=str.length-1;i>=0;i--){
-        ans+=str[i];
-    }
-    return ans;
+function reverseString(str) {
+
+    return str.split("").reverse().join("");
 }
-console.log(rev("Hello John ")); 
+
+
+let str = "Hello John";
+let arr = str.split(" ");
+let result = "";
+for (let i of arr) {
+    result += reverseString(i);
+    result += " ";
+}
+console.log(result);
