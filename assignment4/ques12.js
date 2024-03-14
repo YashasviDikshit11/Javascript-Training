@@ -6,7 +6,6 @@ let inputArray2 = [2, 3, 40, 5];
 inputArray1.sort((a, b) => a - b);
 inputArray2.sort((a, b) => a - b);
 
-
 function findIntersection(arr1, arr2) {
     let i = 0;
     let j = 0;

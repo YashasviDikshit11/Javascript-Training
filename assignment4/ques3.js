@@ -3,19 +3,16 @@ let inputString = "abcabcdabbcc";
 
 let countMap = new Map();
 
-for (let i = 0; i < inputString.length - 1; i++) {
-    if (countMap.has(inputString[i])) {
-        countMap.set(inputString[i], countMap.get(inputString[i]) + 1)
-
-    }
-    else {
-        countMap.set(inputString[i], 1);
-    }
+for (let i = 0; i < inputString.length; i++) {
+  if (countMap.has(inputString[i])) {
+    countMap.set(inputString[i], countMap.get(inputString[i]) + 1);
+  } else {
+    countMap.set(inputString[i], 1);
+  }
 }
 
 let result = "";
 countMap.forEach(function (val, key) {
-    result += key + val;
-
-})
+  result += key + val;
+});
 console.log(result);

@@ -2,9 +2,7 @@
 
 function lastDuplicate(arr)
 {
-  let result=arr.filter(function(val,index){
-                return arr.indexOf(val)!==index;
-            })
+  let result=arr.filter(function(val,index){ return arr.indexOf(val)!==index; })
     console.log(result[result.length-1]);
 
 }

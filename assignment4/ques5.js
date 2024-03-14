@@ -8,19 +8,16 @@ let convertArray = inputString.split(" ");
 let result = "";
 
 function firstUpperCase(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1, str.length);
+  return str.charAt(0).toUpperCase() + str.slice(1, str.length);
 }
 let flag = true;
 for (let i of convertArray) {
-    if (flag == true) {
-        result += i;
-        flag = false;
-    }
-    else {
-
-        result += firstUpperCase(i);
-    }
-
+  if (flag == true) {
+    result += i;
+    flag = false;
+  } else {
+    result += firstUpperCase(i);
+  }
 }
 
 console.log(result);

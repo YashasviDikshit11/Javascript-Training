@@ -1,6 +1,6 @@
 // Write a program to remove duplicate elements from an array
 const removeDuplicate=(arr) =>{
-    let set = [...new Set(arr)];
+    let set = [...new Set(arr)];  //to convert set to array
     console.log(set);
 
 }
